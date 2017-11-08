@@ -57,7 +57,7 @@
 <script src="js/bootstrap.min.js"></script>
 <body>
 <h1>
-    <center>InstaType</center>
+    <center>InsDetector</center>
 </h1>
 <div class="container">
     <div class="row">
