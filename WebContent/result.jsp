@@ -23,7 +23,7 @@
 <br>
 <div class="container">
     <div class="row">
-        <div class="col-md-5 column" >
+        <div class="col-md-12 column" >
         	<div class="row">
         		<a href="http://52.26.82.166:8080/InsDetector/" class="btn btn-default btn-lg" role="button">Back</a>
         		<br>
@@ -31,18 +31,20 @@
         		
         	</div>
 	        <div class="row">
-	        	<div class="col-md-4 column" >
+	        	<div class="col-md-12 column" >
 	            	<img id="image" src="<% out.println(request.getAttribute("image"));%>"/>
 	            </div>
 	        </div>
 	        <div class="row">
-	        	<div class="col-md-4 column" >
+	        	<div class="col-md-12 column" >
 	        	<br>
     				<i id="userId">UserId:<% out.println(request.getAttribute("Id"));%></i>
     			</div>
 	        </div>
+	    </div>
+	</div>
 	        <div class="row">
-	        	<div class="col-md-12 column col-center-block" >
+	        	<div class="col-md-6 column" >
 		            <table class="table table-striped" border="1">
 		            	<caption>Result</caption>
 		                <thead>
@@ -61,13 +63,12 @@
 		                </tbody>
 		            </table>
 		        </div>
+		        <i id="feature" hidden><% out.println(request.getAttribute("feature1"));%></i>
+		        <div id="chart" class="col-md-6 column" ></div>
         	</div>
-    	</div>
     	
-    	<i id="feature" hidden><% out.println(request.getAttribute("feature1"));%></i>
     	
-    <div id="chart" class="col-md-7 column" ></div>
-    </div>
+    	
 </div>
 <script>
 				$(function() {  
