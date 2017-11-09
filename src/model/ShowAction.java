@@ -51,7 +51,14 @@ public class ShowAction extends Action {
 
         request.setAttribute("ResultList",ResultList);
         request.setAttribute("Result",result);
-
+        List<String> feature = new ArrayList<>();
+        List<String> num = new ArrayList<>();
+        for(int i = 0; i < ResultList.size();i++){
+        	feature.add(ResultList.get(i).getResult1());
+        	num.add(ResultList.get(i).getResult2());
+        }
+        request.setAttribute("feature1",feature);
+        request.setAttribute("feature2",num);
         return "result.jsp";
     }
 }

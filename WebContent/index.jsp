@@ -56,9 +56,8 @@
 <%--<script src="js/jquery-1.11.3.min.js"></script>--%>
 <script src="js/bootstrap.min.js"></script>
 <body>
-<h1>
-    <center>InsDetector</center>
-</h1>
+<h1 class="text-center">InsDetector</h1>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12 column">
@@ -129,12 +128,12 @@
                     <input name="userName" type="text" class="form-control" placeholder="Username"
                            aria-describedby="sizing-addon1">
                     <span class="input-group-btn">
-                        <input type="submit" class="btn btn-secondary" value="Search">
+                        <input type="submit" class="btn btn-default btn-lg" role="button" value="Search">
                     </span>
                 </div>
                 <i id="urlName" hidden><% out.println(request.getAttribute("imgUrl"));%></i>
                 <i id="urlId" hidden><% out.println(request.getAttribute("imgId"));%></i>
-                <i id="usrId" hidden><% out.println(request.getAttribute("usrId"));%></i>
+                <i id="usrId" hidden><% out.println(request.getAttribute("usrId"));%></i>  
             </div>
         </form>
         <div id="imgShow" class="col-md-11 column col-center-block"></div>
